@@ -21,30 +21,30 @@ export const b2cPolicies = {
   },
   authorities: {
       signUpSignIn: {
-          authority: "https://mchpab2cdev.b2clogin.com/mchpab2cdev.onmicrosoft.com/B2C_1A_SIGNUP_SIGNIN",
+          authority: ".../B2C_1A_SIGNUP_SIGNIN",
           navigateToLoginRequestUrl: true
       },
       accountOwner: {
-          authority: "https://mchpab2cdev.b2clogin.com/mchpab2cdev.onmicrosoft.com/B2C_1A_SIGNUP_SIGNIN_ACCOUNT_OWNER",
+          authority: ".../B2C_1A_SIGNUP_SIGNIN_ACCOUNT_OWNER",
           navigateToLoginRequestUrl: true
       },
       passwordChange: {
-          authority: "https://mchpab2cdev.b2clogin.com/mchpab2cdev.onmicrosoft.com/B2C_1A_PASSWORD_CHANGE"
+          authority: ".../B2C_1A_PASSWORD_CHANGE"
       },
       acceptInvitation: {            
-          authority: "https://mchpab2cdev.b2clogin.com/mchpab2cdev.onmicrosoft.com/B2C_1A_SIGNUP_SIGNIN_INVITATION_ACCEPTANCE",
+          authority: ".../B2C_1A_SIGNUP_SIGNIN_INVITATION_ACCEPTANCE",
           navigateToLoginRequestUrl: true
       },        
       selectCompany: {            
-          authority: "https://mchpab2cdev.b2clogin.com/mchpab2cdev.onmicrosoft.com/B2C_1A_SELECT_COMPANY",
+          authority: ".../B2C_1A_SELECT_COMPANY",
           navigateToLoginRequestUrl: true
       }, 
       singleCompany: {            
-          authority: "https://mchpab2cdev.b2clogin.com/mchpab2cdev.onmicrosoft.com/B2C_1A_SIGNIN_SPECIFIC_COMPANY",
+          authority: ".../B2C_1A_SIGNIN_SPECIFIC_COMPANY",
           navigateToLoginRequestUrl: true
       }
   },
-  authorityDomain: "mchpab2cdev.b2clogin.com"
+  authorityDomain: "login.com"
 }
 
 
@@ -64,7 +64,7 @@ export default {
       console.log('### Azure AD sign-in: disabled. Will run in demo mode with dummy demo@example.net account')
 
       const dummyUser = {
-        accountIdentifier: 'e11d4d0c-1c70-430d-a644-aed03a60e059',
+        accountIdentifier: 'abcdeerfgg-1c70-430d-a644-eefgty78920jfc',
         homeAccountIdentifier: '',
         username: 'demo@example.net',
         name: 'Demo User',
@@ -117,10 +117,10 @@ export default {
 
     const config = {
       auth: {
-        clientId: '5f4520d5-e857-4b83-95ff-7310b0fc6df6',
+        clientId: '5y6789h5-e857-4b83-95ff-0978790b0fc6df6',
         redirectUri: "http://localhost:8080/",
         authority: b2cPolicies.authorities.signUpSignIn.authority,
-        knownAuthorities: ["https://mchpab2cdev.b2clogin.com/mchpab2cdev.onmicrosoft.com/b2c_1a_signup_signin/v2.0/"], // array of URIs that are known to be valid,
+        knownAuthorities: ["https://login.com/b2c_1a_signup_signin/v2.0/"], // array of URIs that are known to be valid,
         validateAuthority: true,
         navigateToLoginRequestUrl: true
       },
