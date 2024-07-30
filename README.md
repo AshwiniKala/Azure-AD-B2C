@@ -20,7 +20,7 @@ Table of Contents:
 
 2. Installation
    1. Clone the repository:
-      git clone https://github.com/yourusername/msal-authentication-example.git
+      git clone https://github.com/AshwiniKala/Azure-AD-B2C.git
       cd msal-authentication-example
 
    2. Install the dependencies:
@@ -34,9 +34,7 @@ Table of Contents:
 
    2. Configure the MSAL client:
       Create a `.env` file in the root directory of the project and add the following variables:
-      REACT_APP_CLIENT_ID=your-client-id
-      REACT_APP_AUTHORITY=https://login.microsoftonline.com/your-tenant-id
-      REACT_APP_REDIRECT_URI=http://localhost:3000
+     
       Replace `your-client-id` and `your-tenant-id` with the values from your Azure app registration.
 
 4. Usage
