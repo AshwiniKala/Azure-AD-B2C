@@ -21,30 +21,30 @@ export const b2cPolicies = {
   },
   authorities: {
       signUpSignIn: {
-          authority: ".../B2C_1A_SIGNUP_SIGNIN",
+          authority: "https://azuread.b2clogin.com/azuread.onmicrosoft.com/B2C_1A_SIGNUP_SIGNIN",
           navigateToLoginRequestUrl: true
       },
       accountOwner: {
-          authority: ".../B2C_1A_SIGNUP_SIGNIN_ACCOUNT_OWNER",
+          authority: "https://azuread.b2clogin.com/azuread.onmicrosoft.com/B2C_1A_SIGNUP_SIGNIN_ACCOUNT_OWNER",
           navigateToLoginRequestUrl: true
       },
       passwordChange: {
-          authority: ".../B2C_1A_PASSWORD_CHANGE"
+          authority: "https://azuread.b2clogin.com/azuread.onmicrosoft.com/B2C_1A_PASSWORD_CHANGE"
       },
       acceptInvitation: {            
-          authority: ".../B2C_1A_SIGNUP_SIGNIN_INVITATION_ACCEPTANCE",
+          authority: "https://azuread.b2clogin.com/azuread.onmicrosoft.com/B2C_1A_SIGNUP_SIGNIN_INVITATION_ACCEPTANCE",
           navigateToLoginRequestUrl: true
       },        
       selectCompany: {            
-          authority: ".../B2C_1A_SELECT_COMPANY",
+          authority: "https://azuread.b2clogin.com/azuread.onmicrosoft.com/B2C_1A_SELECT_COMPANY",
           navigateToLoginRequestUrl: true
       }, 
       singleCompany: {            
-          authority: ".../B2C_1A_SIGNIN_SPECIFIC_COMPANY",
+          authority: "https://azuread.b2clogin.com/azuread.onmicrosoft.com/B2C_1A_SIGNIN_SPECIFIC_COMPANY",
           navigateToLoginRequestUrl: true
       }
   },
-  authorityDomain: "login.com"
+  authorityDomain: "azuread.b2clogin.com"
 }
 
 
