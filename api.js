@@ -9,10 +9,8 @@ function callApi(endpoint, token) {
         method: "GET",
         headers: headers
       };
-  
-    logMessage('Calling web API...');
-    
-    fetch(endpoint, options)
+      logMessage('Calling web API...');
+        fetch(endpoint, options)
       .then(response => response.json())
       .then(response => {
 
